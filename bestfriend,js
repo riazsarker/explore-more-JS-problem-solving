@@ -1,0 +1,18 @@
+function BestFriend(friends) {
+  let bestFriend = friends[0];
+
+  for (let i = 1; i < friends.length; i++) {
+    if (friends[i].length > bestFriend.length) {
+      bestFriend = friends[i];
+    }
+  }
+
+  return bestFriend;
+}
+
+const friends = ['John', 'Sarah', 'Michael', 'Jessica'];
+
+const bestFriend = BestFriend(friends);
+
+console.log(`Your best friend is: ${bestFriend}.`);
+
